@@ -1,81 +1,24 @@
-<!DOCTYPE html>
-<html>
-	<div class="container">
-		<h1>Chris Liow</h1>
-		<p>Hosted via. Github Pages</p>
-		<ul class="nav nav-tabs">
-		    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-		    <li><a data-toggle="tab" href="#tab1">Credentials/Skills</a></li>
-		    <li><a data-toggle="tab" href="#tab2">Portfolio</a></li>
-		    <li><a data-toggle="tab" href="#tab3">More</a></li>
-	  	</ul>
+---
+layout: default
+---
 
-		<div class="tab-content">
-	    	<div id="home" class="tab-pane fade in active">
-		      	<h3>About Me</h3>
-		      	<p>
-		      		My name is Chris Liow. I am currently studying Computer Engineering at Purdue University with an expected graduation date of December 2015. 
-		      	</p>
-    		</div>
-	    	<div id="tab1" class="tab-pane fade">
-	      		<h3>Credentials</h3>
-	      		<div class="panel-group" role="tablist">
-				    <div class="panel panel-default">
-				        <div class="panel-heading" role="tab" id="optionHeading">
-				            <h4 class="panel-title">
-				                <a role="button" data-toggle="collapse" style="display: block;" href="#edu" aria-expanded="true" aria-controls="edu">
-				                    Education <span class="glyphicon glyphicon-filter pull-right"> </span>
-				                </a>
-				            </h4>
-				        </div>
-				        <div id="edu" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="optionHeading">
-				            <div class="panel-body">
-				                <div class="row">
-				                    
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="panel panel-default">
-				        <div class="panel-heading" role="tab" id="optionHeading">
-				            <h4 class="panel-title">
-				                <a role="button" data-toggle="collapse" style="display: block;" href="#work" aria-expanded="true" aria-controls="work">
-				                    Work Experience <span class="glyphicon glyphicon-filter pull-right"> </span>
-				                </a>
-				            </h4>
-				        </div>
-				        <div id="work" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="optionHeading">
-				            <div class="panel-body">
-				                <div class="row">
-				                    
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-				</div>
+<div class="main-post-list">
 
-	    	</div>
-	    	<div id="tab2" class="tab-pane fade">
-	      		<h3>Portfolio</h3>
-	      		<p>As an aspiring developer, I try to keep myself busy with projects inside and outside of the classroom. Here you will find some of my notable projects completed for classes at Purdue University as well as some of my personal projects I have either completed or am currently working on in my spare time.</p>
-	    	</div>
-	    	<div id="tab3" class="tab-pane fade">
-	      		<h3>More...</h3>
-	      		<p>Extras and such...</p>
-	    	</div>
-		</div>
-	</div>
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+        <div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
+        <hr class="post-list__divider">
+      </li>
+    {% endfor %}
+  </ol>
 
+  <hr class="post-list__divider ">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
+  {% endif %}
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</html>
-
-
-
+</div>
