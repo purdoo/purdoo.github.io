@@ -5,12 +5,11 @@ tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: technology-background.jpg
 ---
-
 Here you can find some of my personal projects I have completed during my time as a student as well as projects I am currently working on in my free time. Most of these projects can be found on my Github page. 
+
+---
 
 ## Summarize (WIP)
 
@@ -19,10 +18,15 @@ Here you can find some of my personal projects I have completed during my time a
 * Machine-learning component utilizes MongoDB to archive significant trends and patterns
 * [Code hosted on Github](https://github.com/purdoo/Summarize) 
 
-<a markdown="0" href="https://github.com/purdoo/Summarize" class="btn">Github Repo</a>
+<a markdown="0" href="https://github.com/purdoo/Summarize" class="btn">Github</a>
+
+---
 
 ## Amplifier Control Subsystem GUI
-<img src="{{ site.url }}/images/tiva.png" alt="tiva_screen" style="height:260px;"><img src="{{ site.url }}/images/tiva2.png" alt="tiva_screen" style="height:260px;">
+
+<img src="{{ site.url }}/images/tiva.png" alt="tiva_screen" style="height:260px;">
+<img src="{{ site.url }}/images/tiva2.png" alt="tiva_screen" style="height:260px;">
+
 
 * Senior Design project for ECE 49595 (formerly known as ECE 402)
 * Programmed a TIVA C Series Microcontroller to provide an interface to control and monitor a complete Hi-Fi sound system
@@ -34,3 +38,18 @@ Here you can find some of my personal projects I have completed during my time a
 * Awarded the Barrett Robinson Design Award at the end of the semester and was recognized as a section leader for my subsystem
  
 <a markdown="0" href="https://github.com/purdoo/AmplifierControl" class="btn">Github</a>
+
+---
+
+## Trading Project (On Hold)
+
+<img src="{{ site.url }}/images/bollinger.PNG" alt="tiva_screen" style="width:700px;">
+
+
+* Program written in Python that pulls current market data and calculates/displays important trading indicators
+* Uses numpy and pandas library as well as matplotlib to plot the data
+* Pulls data from Quandle API (currently only pulling SP500 stock data)
+* Will be returning to this project soon, currently on hold
+
+<a markdown="0" href="https://github.com/purdoo/Trading-Project" class="btn">Github</a>
+
