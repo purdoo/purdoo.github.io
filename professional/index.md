@@ -13,7 +13,7 @@ image:
 #Work Experience
 ---
 
-##Clarity Partners | Chicago, IL
+##Clarity Partners \| Chicago, IL
 
 ###Software Engineer (Jan 2016 - )
 * Provide technical support and analysis for Metra Website Redesign Project
@@ -27,7 +27,7 @@ image:
 * Primarily worked with ASP.NET MVC5, using C#, HTML/CSS/JS, jQuery, and Oracle SQL
       
 
-##Delphi | Kokomo, IN
+##Delphi \| Kokomo, IN
 
 ###Software Developer Intern (Jan 2014 - March 2015)
 * Developed features for data logging applications in C# and Python
@@ -35,7 +35,7 @@ image:
 * Wrote extensions to allow users to open/edit application logs in variety of formats
 * Organize and handle bugs and issues reported from users, continuously update software to meet client needs
       
-##Purdue Libraries | West Lafayette, IN
+##Purdue Libraries \| West Lafayette, IN
 
 ###Support Technician (March 2013 - May 2014)
 * Provided technical support for staff and faculty of Purdue Libraries
