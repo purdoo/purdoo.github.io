@@ -1,0 +1,167 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="home">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <div id="index">
+    <div class="left">
+      <h3>Work Experience</h3>
+      <h4>Clarity Partners | Chicago, IL</h4>
+        <p>Software Engineer <i>(Jan 2016 - )</i></p>
+	      <ul>
+		      <li>Provide technical support and analysis for Metra Website Redesign Project</li>
+          <li>Outline integration plan between CMS (Drupal) and eCommerce (.NET) areas of the site</li>
+          <li>Write programs to convert Database (Adobe SQL) dumps to readable format(s) and eventual migration to Drupal site</li>
+	      </ul>
+        <p>Associate Software Engineer <i>(May 2015 - Jan 2016)</i></p>
+	      <ul>
+		      <li>Built public facing applications for civilians to access and utilize police resources</li>
+          <li>Developed custom library containing Bootstrap, WebGrid, and Form Validation extension methods for internal use</li>
+          <li>Wrote scripts to compare and edit databases</li>
+          <li>Primarily worked with ASP.NET MVC5, using C#, HTML/CSS/JS, jQuery, and Oracle SQL</li>
+	      </ul>
+      <h4>Delphi | Kokomo, IN</h4>
+        <p>Software Developer Intern <i>(Jan 2014 - March 2015)</i></p>
+	      <ul>
+		      <li>Developed features for data logging applications in C# and Python</li>
+          <li>Developed original message tracking/logging algorithm, drastically improved visual speed and message rate 10x</li>
+          <li>Wrote extensions to allow users to open/edit application logs in variety of formats</li>
+          <li>Organize and handle bugs and issues reported from users, continuously update software to meet client needs</li>
+	      </ul>
+      <h4>IT Technician | West Lafayette, IN</h4>
+        <p>Software Developer Intern <i>(March 2013 - May 2014)</i></p>
+	      <ul>
+		      <li>Provided technical support for staff and faculty of Purdue Libraries</li>
+          <li>Co-authored internal and external customer knowledgebase, as well as composing and editing operational documentation of processes and networks</li>
+          <li>Worked independently and on small teams to solve technical issues that arise</li>
+	      </ul>
+    </div>
+		<div class="right">
+			<h3>Details</h3>
+      <h4>Education</h4>
+      <p>Purdue University (2011-2015)<br><i>BS Computer Engineering</i></p>
+      <h4>Skills</h4>
+      <p>Languages: C#, Python, Java
+         <br>Frameworks: .NET, Drupal
+      </p>
+      <h4>Honors/Awards</h4>
+      <ul>
+        <li>Barrett Robinson Design Award (2015)</li>
+        <li>Purdue Presidential Scholarship (4 years)</li>
+        <li>AT&T Foundation Scholarship (2011, 2012)</li>
+        <li>Purdue FYE Honors Program</li>
+	    </ul>
+		</div>
+		<div id="footer">
+      <p>chrisliow@gmail.com | c.liow@claritypartners.com<br>Chicago, IL 60606 | Tel: (215) 375-4852</p>
+		</div>
+  </div><!-- /#index -->
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>
+
+</html>
+<style>
+  h3 {
+    text-align: center;
+	  font-family: Verdana, sans-serif;
+  }
+  h4 {
+	  margin-left: 5px;
+	  margin-bottom: 15px;
+	  font-family: Verdana, sans-serif;
+  }
+
+
+  .left p {
+	  margin-left: 5px;
+	  margin-right: 5px;
+	  margin-top: -5px;
+    margin-bottom: -5px;
+	  font-family: Garamond, serif;
+	  color: #000000;
+  }
+
+  .right p {
+	  margin-left: 5px;
+	  margin-right: 5px;
+	  margin-top: -5px;
+	  font-family: Garamond, serif;
+	  color: #000000;
+  }
+
+  li {
+	  list-style-type: square;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  .left {
+	  position: relative;
+	  float: left;
+	  margin-top: 10px;
+	  width: 59%;
+	  height: 840px;
+	  background-color: #B9D7D9;
+	  margin-bottom: 10px;
+  }
+  .right {
+	  position: relative;
+	  float: right;
+	  margin-top: 10px;
+	  width: 39%;
+	  height: 840px;
+	  background-color: #F4EBC3;
+	  margin-bottom: 10px;
+  }
+  #footer {
+	  position: relative;
+	  background-color: #668284;
+	  clear: both;
+	  font-family: Verdana, sans-serif;
+	  font-size: 14px;
+	  text-align: center;
+	  color: #ffffff;
+  }
+
+  #footer p {
+	  position: relative;
+	  padding-top: 15px;
+    padding-bottom: 15px;
+  }
+</style>
