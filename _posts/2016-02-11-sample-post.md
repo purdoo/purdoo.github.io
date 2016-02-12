@@ -11,4 +11,6 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-## Welcome to my website! There isn't much here now but feel free to look around.
+## Welcome to my website! 
+
+There isn't much here now but feel free to look around.
