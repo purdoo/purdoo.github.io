@@ -1,10 +1,12 @@
 # Site navigation links
 
-- title: About
+- title: About Me
   url: /about/
+
+- title: Professional
+  url: /professional/
 
 - title: Portfolio
   url: /portfolio/
 
-#- title: Theme Setup
-#  url: /theme-setup/
+
