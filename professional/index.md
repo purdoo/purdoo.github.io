@@ -9,7 +9,7 @@ image:
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
-
+<br>
 
 # Work Experience
 
@@ -48,11 +48,11 @@ image:
 * Co-authored internal and external customer knowledgebase, as well as composing and editing operational documentation of processes and networks
 * Worked independently and on small teams to solve technical issues that arise
 
+<br><br>
+
 # Skills
 
 ---
-
-(WIP)
 
 ### Languages
 
@@ -83,6 +83,8 @@ image:
 * MySQL
 * Oracle SQL
 * Mongo (currently learning)
+
+<br><br>
 
 # Honors/Awards
 
