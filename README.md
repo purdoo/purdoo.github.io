@@ -1,3 +1,10 @@
+This is a static HTML site designed using the Jekyll theme "Minimum Mistakes". The site currently redirects to chrisliow.com. The site is still very basic and has a lot on the 'To-Do' list.
+* Add page for tutoring service
+* Format main/landing page to change post listing appearance
+* Complete script to allow me to add posts/articles remotely
+
+Below you can find the original README for the Minimal Mistakes theme.
+
 # Minimal Mistakes
 
 **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog built. Compatible with Jekyll 3.0 and up.
