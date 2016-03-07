@@ -37,7 +37,7 @@
 
           <!-- Work Experience Section -->
           <section id="work">
-			      <h3>My Work Experience</h3>
+			      <h1>My Work Experience</h1>
 			      <p>Here you can find a list of the work experience I have accumulated since my first year in college.</p><br /><br />
             
  						<div class="row">
@@ -106,7 +106,7 @@
 
 				<!-- Portfolio -->
 					<section id="portfolio">
-						<h2>My Personal Projects</h2>
+						<h1>My Personal Projects</h1>
             <p>These projects range from fun ideas I started on a whim in my free time to collaborative projects for contests/competitions. The source code for all of these projects are hosted in Github, and it is my eventual goal to create an individual github page for each one.</p>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
@@ -115,13 +115,18 @@
 							<article class="6u$ 12u$(xsmall) work-item">
 								<h3>Summarize (WIP)</h3>
 								<p>Python program to automatically summarize an article</p>
+                <ul class="small">
+                  <li>Program capable of scraping news articles and other reading material and automatically generating a comprehensive summary of the text</li>
+                  <li>Beautiful Soup library for web scraping and the NLTK library for a variety of language processing operations</li>
+                  <li>Beautiful Soup library for web scraping and the NLTK library for a variety of language processing operations</li>
+                </ul>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
 								<h3>Amplifier Control Subsystem GUI</h3>
 								<p>Senior Design project for ECE 49595 (formerly known as ECE 402)</p>
                 <ul class="small">
                   <li>Programmed a TIVA C Series Microcontroller to provide an interface to control and monitor a complete Hi-Fi sound system</li>
-                  <li>Responsible for controlling three tonal control and one volume control (digital potentiometers) via SPI Interface</li>
+                  <li>Responsible for controlling three tonal control and one volume control (digital potentiometers) via SPI </li>
                   <li>Programmed to monitor external temperature sensor and perform analog to digital signal conversion</li>
                   <li>Awarded the Barrett Robinson Design Award at the end of the semester</li>
 					      </ul>
@@ -130,16 +135,18 @@
 								<a href="" class="image fit thumb"><img src="images/portfolio/tiva2.png" alt="" /></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<a href="" class="image fit thumb"><img src="images/portfolio/bollinger.png" alt="" /></a>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Trading Project</h3>
+								<p>Pulls stock information and calculates significant trends and trading indicators</p>
+                <ul class="small">
+                  <li>Program written in Python that pulls current market data and calculates/displays important trading indicators</li>
+                  <li>Uses numpy and pandas library as well as matplotlib to plot the data</li>
+                  <li>Pulls data from Quandle API (currently only pulling SP500 stock data)</li>
+                </ul>
 							</article>
 						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
 					</section>
 
 				<!-- Three -->
