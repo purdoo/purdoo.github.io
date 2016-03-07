@@ -2114,9 +2114,22 @@
 		padding-left: 1em;
 	}
 
+	ul.small {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+    font-size: 60%;
+	}
+
 		ul li {
 			padding-left: 0.5em;
 		}
+/*
+		ul li-s {
+			padding-left: 0.5em;
+      font-size: 60%;
+		}
+*/
 
 		ul.alt {
 			list-style: none;
